@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="utf-8" />
+        <title>Matrix Transformation</title>
+    </head>
+    
+    <body>
+        <div class="container">
+            <div class="canv item">
+                <main></main>
+                <div class="control">
+                    <button type="button" id="play" onclick="start_stop()">Play</button>
+                    <button type="button" id="restart" onclick="restart()">Reset</button>
+                    <span>
+                        <input type="checkbox" id="showVecs" onclick="showEVecs()" checked>
+                        <label>Show Eigen Vectors</label> <br>
+                    </span>
+                </div>
+            </div>
+
+            <div class="data item">
+                <div id="mat">
+                    <p>Matrix =</p>
+                    <span id="lbrac"></span>
+                    <div style="display: inline-block;" id="matrix"></div>
+                    <span id="rbrac"></span>
+                </div>
+                <p id="determinant"></p>
+                <p id="eigvals"></p>
+            </div>
+        </div>
+
+        <p contenteditable>Haris is cool</p>
+        <script src='matrix.js'></script>
+        <script src='sketch.js'></script>
+        <script src='script.js'></script>
+    </body>
+</html>
